@@ -8,7 +8,9 @@ import AboutStaff from "../../pages/about/staff";
 
 //import activities pages
 import Tours from "../../pages/activities/ghosttours";
+import Hiking from "../../pages/activities/hiking";
 import LocalAdventures from "../../pages/activities/localadventures";
+import MoreInfo from "../../pages/activities/moreinfo";
 
 //import booking info pages
 import Rooms from "../../pages/bookcontact/roomopts";

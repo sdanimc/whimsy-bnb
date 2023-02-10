@@ -1,5 +1,5 @@
 import React from "react";
-import hero from '../assets/eugenivy_now-LNcoblo8nj8-unsplash(1).jpg';
+import hero from '../../assets/heroimg.jpg';
 function Header(props){
     return(
 <header className="flex-row space-between px-1">

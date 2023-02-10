@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 //import components used on all pages
 import Header from "./components/header";
 import Nav from "./components/footer";
 import Footer from "./components/footer";
-//import pages 
-
+//import Page from "./components/page";
 
 function App() {
+  const [pages] = useState({
+    //{name: Ghosts}, etc.
+  });
   return (
-    <div className="App">
-   test
+    <div>
+      <Header />
+      <Nav />
+      <main></main>
+      <Footer />
     </div>
   );
 }

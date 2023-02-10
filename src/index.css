@@ -4,3 +4,11 @@ body{
 header img {
 width: 100%;
 }
+
+footer{
+    background-color: rgb(60, 118, 60);
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

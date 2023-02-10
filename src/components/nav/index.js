@@ -1,7 +1,7 @@
 import React from "react";
 function Nav(props){
     return(
-        <div></div>
+        <div><p>nav bar</p></div>
     )
 }
 export default Nav;

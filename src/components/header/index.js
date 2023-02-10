@@ -1,10 +1,10 @@
 import React from "react";
-import hero from '../../assets/heroimg.jpg';
+import hero from '../../assets/heroimg2.jpg';
 function Header(props){
     return(
 <header>
       <img src={hero} alt="whimsy manor bnb"></img>
-      {props.children}
+      {/*{props.children}*/}
 </header>
     );
 }

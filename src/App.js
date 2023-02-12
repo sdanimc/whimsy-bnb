@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
 import Page from "./components/page";
+import Dropdown from "./components/nav/dropdown";
 
 function App() {
 const [pages] = useState(
@@ -12,11 +13,14 @@ const [pages] = useState(
     { name: "Activities" },
     { name: "Booking" }]
   );
-  const [currentPage, setCurrentPage] = useState(pages[0])
+  const [currentPage, setCurrentPage] = useState(pages[0]);
+  const [dropOpen, setDropOpen] = useState(false);
   return (
     <div>
       <Header />
-      <Nav pages={pages} setCurrentPage={setCurrentPage} currentPage ={currentPage}></Nav>
+      <Nav pages={pages} setCurrentPage={setCurrentPage} currentPage ={currentPage} setDropOpen={setDropOpen}>
+      </Nav>
+     <Dropdown dropOpen = {dropOpen}></Dropdown>
       <main>
         <Page currentPage={currentPage}></Page>
       </main>

@@ -5,7 +5,7 @@ function Header(props){
     return(
 <header>
       <img src={hero} alt="whimsy manor bnb"></img>
-      <Nav />
+      
 </header>
     );
 }

@@ -1,15 +1,22 @@
 import React from "react";
-import { menuItems } from "./menuitems";
-function Nav(props){
-    return(
+
+function Nav(props) {
+    const {
+        pages = [],
+        setCurrentPage,
+        currentPage,
+    } = props;
+    return (
         <nav>
-            <ul className="menus">{menuItems.map((menu, index) => {
-          return (
-            <li className="menu-items" key={index}>
-              <a href={menu.url}>{menu.title}</a>
-            </li>
-          );
-        })}</ul>
+            <ul className="menus">
+                {pages.map((Page) => (
+                <li className={`mx-5 ${currentPage.name === Page.name && 'navActive'}`} key={Page.name}>
+                    <span onClick={() => setCurrentPage(Page)}>
+                        {Page.name}
+                    </span>
+                </li>
+            ))}
+            </ul>
         </nav>
     )
 }

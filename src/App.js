@@ -12,7 +12,6 @@ const [pages] = useState({
   return (
     <div>
       <Header />
-      <Nav />
       <main></main>
       <Footer />
     </div>

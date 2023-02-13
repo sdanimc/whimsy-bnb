@@ -18,7 +18,9 @@ const [pages] = useState(
   { name: "About" },
   { name: "Activities" },
   { name: "Booking" },
-  { name: "Staff"}
+  { name: "Staff"},
+  { name: "Ghosts"},
+  { name: "Maps"},
 ])
   const [currentPage, setCurrentPage] = useState(pagesset[0]);
   return (

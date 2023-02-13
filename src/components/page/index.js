@@ -1,9 +1,9 @@
 import React from "react";
 import PageContent from "../pagecontent";
 //import about pages
-//import AboutGhosts from "../../pages/about/ghosts";
+import AboutGhosts from "../../pages/about/ghosts";
 import AboutHistory from "../../pages/about/history";
-/*import AboutMaps from "../../pages/about/maps";*/
+import AboutMaps from "../../pages/about/maps";
 import AboutStaff from "../../pages/about/staff";
 
 //import activities pages
@@ -34,6 +34,10 @@ const render = () => {
             return <Rooms />;
         case "Staff" :
             return <AboutStaff />;
+        case "Ghosts" :
+            return <AboutGhosts />;
+        case "Maps" :
+            return <AboutMaps />;
         default:
             return <Home />;
     }

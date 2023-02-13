@@ -17,13 +17,16 @@ function Nav(props) {
                         </span>
                         <div className="dropdowns">
                             <ul className="dropdown aboutdown">
-                            <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "About" }) }}>History</span></li>
+                                <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "About" }) }}>History</span></li>
                                 <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "Staff" }) }}>Staff</span></li>
                                 <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "Ghosts" }) }}>Ghosts</span></li>
                                 <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "Maps" }) }}>Maps</span></li>
                             </ul>
                             <ul className="dropdown activdown">
-                                <li>drop2</li>
+                                <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "Activities" }) }}>Ghost Tours</span></li>
+                                <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "Local" }) }}>To Do in Town</span></li>
+                                <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "Hiking" }) }}>Local Hiking</span></li>
+                                <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "More" }) }}>Events and More!</span></li>
                             </ul>
                             <ul className="dropdown bookdown">
                                 <li>drop 3</li>

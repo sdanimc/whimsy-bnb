@@ -7,26 +7,29 @@ import Page from "./components/page";
 //import Dropdown from "./components/nav/dropdown";
 
 function App() {
-const [pages] = useState(
+  const [pages] = useState(
     [{ name: "Home" },
     { name: "About" },
     { name: "Activities" },
     { name: "Booking" }]
   );
   const [pagesset] = useState([
-  { name: "Home" },
-  { name: "About" },
-  { name: "Activities" },
-  { name: "Booking" },
-  { name: "Staff"},
-  { name: "Ghosts"},
-  { name: "Maps"},
-])
+    { name: "Home" },
+    { name: "About" },
+    { name: "Activities" },
+    { name: "Booking" },
+    { name: "Staff" },
+    { name: "Ghosts" },
+    { name: "Maps" },
+    { name: "Local" },
+    { name: "Hiking" },
+    { name: "More" },
+  ])
   const [currentPage, setCurrentPage] = useState(pagesset[0]);
   return (
     <div>
       <Header />
-      <Nav pages={pages} setCurrentPage={setCurrentPage} currentPage ={currentPage}>
+      <Nav pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage}>
       </Nav>
       <main>
         <Page currentPage={currentPage}></Page>

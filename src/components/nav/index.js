@@ -29,7 +29,10 @@ function Nav(props) {
                                 <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "More" }) }}>Events and More!</span></li>
                             </ul>
                             <ul className="dropdown bookdown">
-                                <li>drop 3</li>
+                                <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "Booking" }) }}>Rooms</span></li>
+                                <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "Events" }) }}>Events</span></li>
+                                <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "Calendar" }) }}>Calendar</span></li>
+                                <li className={`dropOpt`}> <span onClick={function () { setCurrentPage({ name: "Contact" }) }}>Contact Us</span></li>
                             </ul>
                         </div>
                     </li>

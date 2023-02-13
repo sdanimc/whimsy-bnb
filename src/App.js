@@ -24,6 +24,9 @@ function App() {
     { name: "Local" },
     { name: "Hiking" },
     { name: "More" },
+    { name: "Events" },
+    { name: "Calendar" },
+    { name: "Contact" }
   ])
   const [currentPage, setCurrentPage] = useState(pagesset[0]);
   return (

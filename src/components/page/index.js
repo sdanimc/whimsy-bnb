@@ -14,45 +14,51 @@ import MoreInfo from "../../pages/activities/moreinfo";
 
 //import booking info pages
 import Rooms from "../../pages/bookcontact/roomopts";
-/*import Calendar from "../../pages/bookcontact/calendar";
+import Calendar from "../../pages/bookcontact/calendar";
 import Contact from "../../pages/bookcontact/contact";
-import Events from "../../pages/bookcontact/eventopts";*/
+import Events from "../../pages/bookcontact/eventopts";
 
 //import home page
 import Home from "../../pages/home";
 
 function Page({ currentPage }) {
-const render = () => {
-    switch(currentPage.name){
-        case "Home" :
-            return <Home />;
-        case "About" :
-            return <AboutHistory />;
-        case "Activities" :
-            return <Tours />;
-        case "Booking" :
-            return <Rooms />;
-        case "Staff" :
-            return <AboutStaff />;
-        case "Ghosts" :
-            return <AboutGhosts />;
-        case "Maps" :
-            return <AboutMaps />;
-        case "Local" :
-            return <LocalAdventures />;
-        case "Hiking" :
-            return <Hiking />;
-        case "More" :
-            return <MoreInfo />;
-        default:
-            return <Home />;
+    const render = () => {
+        switch (currentPage.name) {
+            case "Home":
+                return <Home />;
+            case "About":
+                return <AboutHistory />;
+            case "Activities":
+                return <Tours />;
+            case "Booking":
+                return <Rooms />;
+            case "Staff":
+                return <AboutStaff />;
+            case "Ghosts":
+                return <AboutGhosts />;
+            case "Maps":
+                return <AboutMaps />;
+            case "Local":
+                return <LocalAdventures />;
+            case "Hiking":
+                return <Hiking />;
+            case "More":
+                return <MoreInfo />;
+            case "Events":
+                return <Events />;
+            case "Calendar":
+                return <Calendar />;
+            case "Contact":
+                return <Contact />;
+            default:
+                return <Home />;
+        }
     }
-}
-return (
-    <section>
-        <PageContent>{render()}</PageContent>
-    </section>
-)
+    return (
+        <section>
+            <PageContent>{render()}</PageContent>
+        </section>
+    )
 }
 
 export default Page;

@@ -1,9 +1,12 @@
 import React from "react";
-function Dropdown() {
+function Dropdown(props) {
+    const {
+        setCurrentPage
+    } = props
     return(
         <div className="dropdowns">
         <ul className="dropdown aboutdown">
-            <li>drop1</li>
+            <li className={`dropOpt`}> <span onClick={function(){setCurrentPage({name: "Staff"})}}>Staff</span></li>
         </ul>
         <ul className="dropdown activdown">
             <li>drop2</li>

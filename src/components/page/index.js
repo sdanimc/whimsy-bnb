@@ -3,8 +3,8 @@ import PageContent from "../pagecontent";
 //import about pages
 //import AboutGhosts from "../../pages/about/ghosts";
 import AboutHistory from "../../pages/about/history";
-/*import AboutMaps from "../../pages/about/maps";
-import AboutStaff from "../../pages/about/staff";*/
+/*import AboutMaps from "../../pages/about/maps";*/
+import AboutStaff from "../../pages/about/staff";
 
 //import activities pages
 import Tours from "../../pages/activities/ghosttours";
@@ -32,6 +32,8 @@ const render = () => {
             return <Tours />;
         case "Booking" :
             return <Rooms />;
+        case "Staff" :
+            return <AboutStaff />;
         default:
             return <Home />;
     }

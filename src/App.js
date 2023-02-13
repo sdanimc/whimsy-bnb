@@ -13,16 +13,19 @@ const [pages] = useState(
     { name: "Activities" },
     { name: "Booking" }]
   );
-  const [currentPage, setCurrentPage] = useState(pages[0]);
-  //const [dropOpen, setDropOpen] = useState(false);
-  //const [dropOpt, setDropOpt] = useState(pages[0]);
+  const [pagesset] = useState([
+  { name: "Home" },
+  { name: "About" },
+  { name: "Activities" },
+  { name: "Booking" },
+  { name: "Staff"}
+])
+  const [currentPage, setCurrentPage] = useState(pagesset[0]);
   return (
     <div>
       <Header />
-      <Nav pages={pages} setCurrentPage={setCurrentPage} currentPage ={currentPage} 
-       >{/*setDropOpen={setDropOpen} setDropOpt={setDropOpt} dropOpt={dropOpt}*/}
+      <Nav pages={pages} setCurrentPage={setCurrentPage} currentPage ={currentPage}>
       </Nav>
-     {/*<Dropdown dropOpen = {dropOpen} dropOpt={dropOpt}></Dropdown>*/}
       <main>
         <Page currentPage={currentPage}></Page>
       </main>

@@ -7,14 +7,27 @@ width: 100%;
 nav {
 width: 100%;
 }
-nav ul {
+.menus {
     width: 100%;   
 }
-nav ul li {
+.menus li {
     display: inline-block;
     width: 25%;
     text-align: center;
     text-overflow: wrap;
+}
+.dropdown {
+    display: none;
+    z-index: 1;
+}
+.About:hover .aboutdown{
+    display: block;
+}
+.Activities:hover .activdown{
+    display: block;
+}
+.Booking:hover .bookdown{
+    display: block;
 }
 
 footer{

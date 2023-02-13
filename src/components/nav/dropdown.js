@@ -1,22 +1,18 @@
 import React from "react";
-function Dropdown({ dropOpt }, { dropOpen } ) {
-    console.log(dropOpt);
-        console.log(dropOpen);
-    const render = () => {
-        
-        if(dropOpen){
-            
-            return(<div>drop1</div>);
-        }else{
-            return(<div></div>)
-        }
-    }
-    return (
-        <section>
-            {render()}
-        </section>
-    )
-    }
+function Dropdown() {
+    return(
+        <div className="dropdowns">
+        <ul className="dropdown aboutdown">
+            <li>drop1</li>
+        </ul>
+        <ul className="dropdown activdown">
+            <li>drop2</li>
+        </ul>
+        <ul className="dropdown bookdown">
+            <li>drop 3</li>
+        </ul>
+        </div>
+    )    }
     
 
 

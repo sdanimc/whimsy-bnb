@@ -15,12 +15,14 @@ const [pages] = useState(
   );
   const [currentPage, setCurrentPage] = useState(pages[0]);
   const [dropOpen, setDropOpen] = useState(false);
+  const [dropOpt, setDropOpt] = useState(pages[0]);
   return (
     <div>
       <Header />
-      <Nav pages={pages} setCurrentPage={setCurrentPage} currentPage ={currentPage} setDropOpen={setDropOpen}>
+      <Nav pages={pages} setCurrentPage={setCurrentPage} currentPage ={currentPage} 
+      setDropOpen={setDropOpen} setDropOpt={setDropOpt} dropOpt={dropOpt} >
       </Nav>
-     <Dropdown dropOpen = {dropOpen}></Dropdown>
+     <Dropdown dropOpen = {dropOpen} dropOpt={dropOpt}></Dropdown>
       <main>
         <Page currentPage={currentPage}></Page>
       </main>

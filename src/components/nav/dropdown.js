@@ -1,15 +1,14 @@
 import React from "react";
-function Dropdown({ dropOpen }) {
+function Dropdown({ dropOpt }, { dropOpen } ) {
+    console.log(dropOpt);
+        console.log(dropOpen);
     const render = () => {
-        switch(dropOpen){
-            case true :
-                return (
-                    <div> drop1</div>
-                );
-            case false :
-                return (<div></div>);
-            default:
-                return (<div></div>);
+        
+        if(dropOpen){
+            
+            return(<div>drop1</div>);
+        }else{
+            return(<div></div>)
         }
     }
     return (

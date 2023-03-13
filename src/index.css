@@ -6,6 +6,8 @@ width: 100%;
 }
 nav {
 width: 100%;
+position: sticky;
+top: 0;
 }
 .menus {
     width: 100%;   
@@ -33,7 +35,22 @@ width: 100%;
 footer{
     background-color: rgb(60, 118, 60);
     height: 30px;
-    position: fixed;
     bottom: 0;
     width: 100%;
+}
+.pageOn{
+    display: inline-block;
+    margin-left: 10%;
+    width: 80%
+}
+.card{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 3px;
+}
+.cardoddpic{
+    float: right;
+}
+.cardevenpic{
+    float: left;
 }

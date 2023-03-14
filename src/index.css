@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    max-width: 100%;
 }
 header img {
 width: 100%;
@@ -10,7 +11,8 @@ position: sticky;
 top: 0;
 }
 .menus {
-    width: 100%;   
+    width: 100%;
+    padding: 0;   
 }
 .menus li {
     display: inline-block;
@@ -18,9 +20,21 @@ top: 0;
     text-align: center;
     text-overflow: wrap;
 }
+.mx-5{
+    position: relative;
+    display: inline-block;
+}
 .dropdown {
     display: none;
     z-index: 1;
+    position: absolute;
+    min-width: 100%;
+    padding: 0;
+}
+li .dropOpt{
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 .About:hover .aboutdown{
     display: block;
@@ -53,4 +67,7 @@ footer{
 }
 .cardevenpic{
     float: left;
+}
+main{
+    min-height: 200px;
 }

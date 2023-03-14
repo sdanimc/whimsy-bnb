@@ -2,6 +2,7 @@
 body {
     margin: 0;
     max-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*Header and nav styling*/
@@ -13,6 +14,7 @@ nav {
     width: 100%;
     position: sticky;
     top: 0;
+    background-color: aliceblue;
 }
 
 nav:hover {
@@ -42,12 +44,14 @@ nav:hover {
     position: absolute;
     min-width: 100%;
     padding: 0;
+    
 }
 
 li .dropOpt {
     display: block;
     width: 100%;
     text-align: center;
+    background-color: aliceblue;
 }
 
 .About:hover .aboutdown {
@@ -73,14 +77,73 @@ footer {
 /*page content styling*/
 main {
     min-height: 200px;
+    width: 100%;
+    padding-bottom: 20px;
 }
 .pageOn {
+ 
+}
+/*homepage styling*/
+.welcome{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+.home{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.line1{
+    margin-bottom: 0;
+}
+.line2{
+    margin-top:0;
+}
+.bnbname{
+    font-size: larger;
+}
+/*photo gallery*/
+.wrapper {
+    position: relative;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 1200px;
+    max-height: 1200px;
+    
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2vmin;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .gallery img {
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: -52%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: scale(1);
+    transition: all .25s;}
+    
+    .gallery img:nth-child(7n + 1) {
+      grid-column: 2 / span 2;
+    }
+    
+    .gallery img:hover {
+      z-index: 2;
+      transform: scale(2);
+    }
+  
+  
+/*card page styling*/
+.cardpg{
     display: inline-block;
     margin-left: 10%;
     width: 80%
 }
-/*homepage styling*/
-/*card page styling*/
 .card {
     border: 2px solid black;
     margin: 10px;

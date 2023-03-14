@@ -40,7 +40,7 @@ nav:hover {
 
 .dropdown {
     display: none;
-    z-index: 1;
+    z-index: 90;
     position: absolute;
     min-width: 100%;
     padding: 0;
@@ -144,19 +144,45 @@ main {
     margin-left: 10%;
     width: 80%
 }
-.card {
-    border: 2px solid black;
+
+.cardpgtitle *{
+    display: inline;
+    width: fit-content;
+    padding: 10px;
+}
+.cardpgtitle{
     margin: 10px;
-    padding: 3px;
 }
-
-.cardoddpic {
-    float: right;
+.card{
+    box-shadow: 11px 10px 5px -5px rgba(0,0,0,0.2);
+    min-height: 100px;
+    background-color: lightgray;
+    margin: 10px;
+    width: 80%;
+    display: flex;
 }
-
-.cardevenpic {
+.cardbody{
+    padding: 10px
+}
+.card img{
+    min-height: 100%;
+    min-width: 50px;
+    max-width: 25%;
+    padding: 0;
+    background-color: black;
+    
+}
+.odd{
     float: left;
 }
+.even{
+    float: right;
+    justify-content: right;
+}
+.even .cardbody{
+    text-align: right;
+}
+
 /*maps and hikes page styling*/
 /*tours page styling*/
 /*history page styling*/

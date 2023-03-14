@@ -1,29 +1,41 @@
-body{
+/*full page styles*/
+body {
     margin: 0;
     max-width: 100%;
 }
+
+/*Header and nav styling*/
 header img {
-width: 100%;
+    width: 100%;
 }
+
 nav {
-width: 100%;
-position: sticky;
-top: 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
 }
+
+nav:hover {
+    cursor: pointer;
+}
+
 .menus {
     width: 100%;
-    padding: 0;   
+    padding: 0;
 }
+
 .menus li {
     display: inline-block;
     width: 25%;
     text-align: center;
     text-overflow: wrap;
 }
-.mx-5{
+
+.mx-5 {
     position: relative;
     display: inline-block;
 }
+
 .dropdown {
     display: none;
     z-index: 1;
@@ -31,43 +43,59 @@ top: 0;
     min-width: 100%;
     padding: 0;
 }
-li .dropOpt{
+
+li .dropOpt {
     display: block;
     width: 100%;
     text-align: center;
 }
-.About:hover .aboutdown{
-    display: block;
-}
-.Activities:hover .activdown{
-    display: block;
-}
-.Booking:hover .bookdown{
+
+.About:hover .aboutdown {
     display: block;
 }
 
-footer{
+.Activities:hover .activdown {
+    display: block;
+}
+
+.Booking:hover .bookdown {
+    display: block;
+}
+
+/*Footer Styling*/
+footer {
     background-color: rgb(60, 118, 60);
     height: 30px;
     bottom: 0;
     width: 100%;
 }
-.pageOn{
+
+/*page content styling*/
+main {
+    min-height: 200px;
+}
+.pageOn {
     display: inline-block;
     margin-left: 10%;
     width: 80%
 }
-.card{
+/*homepage styling*/
+/*card page styling*/
+.card {
     border: 2px solid black;
     margin: 10px;
     padding: 3px;
 }
-.cardoddpic{
+
+.cardoddpic {
     float: right;
 }
-.cardevenpic{
+
+.cardevenpic {
     float: left;
 }
-main{
-    min-height: 200px;
-}
+/*maps and hikes page styling*/
+/*tours page styling*/
+/*history page styling*/
+/*calendar page styling*/
+/*contact page styling*/

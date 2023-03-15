@@ -81,8 +81,6 @@ main {
     padding-bottom: 20px;
 }
 
-.pageOn {}
-
 /*homepage styling*/
 .welcome {
     margin-left: 10%;
@@ -195,5 +193,37 @@ main {
 /*maps and hikes page styling*/
 /*tours page styling*/
 /*history page styling*/
+.historypg{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.historytitle{
+    padding-left: 10px;
+}
+.historyblock1, .historyblock2{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.historypic1{
+    float: right;
+    max-width: 25%;
+    margin-left: 40px;
+}
+.historytext1{
+    max-width: 75%;
+    float: left;
+    padding-left: 10px;
+}
+
+.historypic2{
+    float: left;
+    width: 25%;
+    margin-right: 40px;
+    padding-left: 10px;
+}
+.historytext3{
+    margin-top: 20px;
+}
 /*calendar page styling*/
 /*contact page styling*/

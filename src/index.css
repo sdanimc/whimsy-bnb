@@ -191,6 +191,23 @@ main {
 }
 
 /*maps and hikes page styling*/
+.mapspg{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.mapstitle{
+    margin-left: 10px;
+}
+.mapstitle *{
+    display: inline;
+    width: fit-content;
+    padding: 10px;
+}
+.mapsbody{
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+}
 /*tours page styling*/
 /*history page styling*/
 .historypg{
